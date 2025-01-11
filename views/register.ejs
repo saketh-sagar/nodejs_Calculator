@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins',sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+
+        }
+        .inside{
+            background: grey;
+            height: 50%;
+            border-radius: 18px;
+            display: grid;
+            width: 45%;
+        }
+        .outside{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 31px;
+        }
+        form input{
+            border-radius: 5px;
+            margin: 2px;
+        }
+        .login{
+            display: block;
+            margin-left: 5%;    
+        }
+        form input.submit{
+            border-radius: 2px;
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inside">
+            <div class="outside">
+    <H1>Welcome ADV's CALCULATOR APP</H1>
+    <H5>RIGESTER TO ACCESS THE CALCULATOR</H5></div>
+    <form action="/register" method="post">
+        <label for="name">Username</label>
+        <input type="test" name="Username">
+        <label for="Email">Email</label>
+        <input type="text" name="Email" >
+        <label for="Password">Password</label>
+        <input type="password" name="Password">
+        <input class="submit" type="submit" name="submit">
+
+    </form>
+    <div class="login">
+        <h5>already have an account  <a href="/login"> LogIn</a> </h5>
+        
+    </div>
+</div>
+</div>
+</body>
+</html>

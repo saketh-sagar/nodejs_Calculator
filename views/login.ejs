@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins',sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100% ;
+            height: 100vh;
+            background:#e3f9ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container h1{
+            position: relative;
+            top: -25%;
+        }
+        .container h5{
+            position: relative;
+            top: -23%;
+        }
+        form {
+            background: white;
+            height: 28vh;
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            justify-content: center;
+        }
+        form input{
+            margin-bottom:10px;
+        }
+        form label{
+            justify-content: center;
+            display: flex;
+            margin: 10px;
+        }
+        form input.submit{
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <H1>Welcome ADV's CALCULATOR APP</H1>
+    <H5>lOGIN To access calculator app</H5>
+    <form action="/user-login" method="post">
+        <label for="Email">Email</label>
+        <input type="text" name="Email" >
+        <label for="Password">Password</label>
+        <input type="password" name="Password">
+        <input type="submit" name="submit" class="submit">
+    </form>
+
+   
+</div>
+</body>
+</html>
