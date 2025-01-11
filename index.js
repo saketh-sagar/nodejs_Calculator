@@ -10,7 +10,7 @@ const { MongoExpiredSessionError } = require('mongodb');
 const port = process.env.port || 5000;
 const app = express();
 const data = require('./models/Data')
-
+let Mongo_Uri = 'mongodb+srv://msakethsagar:mmAaPoMibn3c5x3q@cluster0.l6w2w.mongodb.net/?retryWrites=true&w=majority&ssl=true&appName=Cluster0'
 
 app.use(express.urlencoded({extended:true}));
 
@@ -19,7 +19,7 @@ app.use(express.static('public'));
 
 app.use(bodyparser.json());
 dotenv.config();
-mongoose.connect(process.env.Mongo_uri).then(()=>{
+mongoose.connect(Mongo_Uri).then(()=>{
     console.log("succesfully connected to Mongo DB" );
 }).catch((err)=>{
     console.error(err)
