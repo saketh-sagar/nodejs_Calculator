@@ -26,7 +26,7 @@ mongoose.connect(Mongo_Uri).then(()=>{
 })
 
 const store = new Mongodbstore({
-    uri:process.env.Mongo_uri,
+    uri:Mongo_Uri,
     collection :'MYSESSION'
 })
 
@@ -78,9 +78,6 @@ app.post('/user-login',async(req,res)=>{
     }
     res.redirect('/dashboard')
 })
-
-
-
 
 app.listen(port,()=>{
 console.log(`Server started and running at ${port}`)
