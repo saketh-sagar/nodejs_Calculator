@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ADV CALCULATOR</title>
     <style>
         *{
             margin: 0;
@@ -53,6 +54,21 @@
             margin-left: 10%;
             margin-top: 3%;
         }
+        @media only screen and (max-width: 600px) {
+            .inside {
+            background: grey;
+            height: 57%;
+            border-radius: 18px;
+            display: grid;
+            width: 76%;
+        }
+        .container h1{
+            margin-left: 8%;
+        }
+        body{
+            background-image:url('../cal1.png')
+        }
+        }
     </style>
 </head>
 <body>
@@ -63,11 +79,11 @@
     <H5>RIGESTER TO ACCESS THE CALCULATOR</H5></div>
     <form action="/register" method="post">
         <label for="name">Username</label>
-        <input type="test" name="Username">
+        <input type="test" required name="Username">
         <label for="Email">Email</label>
-        <input type="text" name="Email" >
+        <input type="text" required name="Email" >
         <label for="Password">Password</label>
-        <input type="password" name="Password">
+        <input type="password" required name="Password">
         <input class="submit" type="submit" name="submit">
 
     </form>
