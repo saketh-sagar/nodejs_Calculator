@@ -16,7 +16,7 @@
         <div class="calculator">
             <form action="">
                 <div class="display">
-                    <input type="text" name="display">
+                    <input type="text" id="inputField" name="display">
                 </div>
                 <div>
                     <input type="button" value="AC" onclick="display.value = '' " class="operator">
@@ -51,6 +51,10 @@
             </form>
         </div>
     </div>
-    
+    <script>
+            const input = document.getElementById('inputField').value;
+            const lastCharacter = input.charAt(input.length - 1);
+            console.log(lastCharacter);
+    </script>
 </body>
 </html>
